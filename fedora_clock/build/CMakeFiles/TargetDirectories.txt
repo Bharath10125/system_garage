@@ -1,0 +1,9 @@
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/fedora_clock.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/edit_cache.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/rebuild_cache.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/list_install_components.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/install.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/install/local.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/install/strip.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/fedora_clock_autogen_timestamp_deps.dir
+/home/bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/fedora_clock_autogen.dir

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_fedora_clock_FILE /home/bharath/Documents/system_garage/fedora_clock/build/fedora_clock)
+set(__QT_DEPLOY_TARGET_fedora_clock_TYPE EXECUTABLE)
