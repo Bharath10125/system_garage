@@ -1,4 +1,0 @@
-C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/fedora_clock.dir
-C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/INSTALL.dir
-C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/ZERO_CHECK.dir

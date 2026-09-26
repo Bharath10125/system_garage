@@ -1,0 +1,93 @@
+# ==========================================
+# CMake Build Artifacts & Directories
+# ==========================================
+build/
+**/build/
+cmake-build-*/
+**/cmake-build-*/
+CMakeFiles/
+**/CMakeFiles/
+CMakeCache.txt
+**/CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+**/Makefile
+cmake_install.cmake
+**/cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# ==========================================
+# Compiled Binaries & Object Files
+# ==========================================
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.map
+*.tlog
+*.recipe
+*.lastbuildstate
+*.idb
+
+# ==========================================
+# Qt Generated Files & Caches
+# ==========================================
+*_autogen/
+**/*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+.qt/
+**/.qt/
+
+# ==========================================
+# IDEs & Editor Files
+# ==========================================
+.vs/
+**/.vs/
+*.sln
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+.vscode/
+.idea/
+
+# ==========================================
+# Output Directories & Logs
+# ==========================================
+bin/
+lib/
+dist/
+out/
+*.log
+aqtinstall.log
+**/aqtinstall.log
+
+# ==========================================
+# Operating System & Temporary Files
+# ==========================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak
+*~
