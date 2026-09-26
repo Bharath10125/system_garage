@@ -15,6 +15,20 @@ A modern, minimalist full-screen flip-card digital clock application with smooth
   - Displays hours, minutes, seconds (`HH:MM:SS`) and date (`Day, DD MMM YYYY`).
   - Simple controls: Press `Esc`, `Q`, or click anywhere with the mouse to exit.
 
+### 💓 [Pulse Widget (`pusle_widget`)](pusle_widget/)
+A sleek, floating desktop resource monitor widget built with **C++** and **Qt 6**.
+
+- **Features**:
+  - Compact mode with beating heartbeat logo and live spark particles.
+  - Expanded mode displaying real-time metrics for CPU, RAM, Network, Battery, Temperature, and Disk usage.
+  - Interactive UI with drag-to-move, edge snapping, and opacity settings.
+
+### ⚙️ [System Config (`system_config`)](system_config/)
+A collection of system configuration files and dotfiles.
+
+- **Features**:
+  - Custom [Oh My Posh](https://ohmyposh.dev/) terminal theme (`terminal.omp.json`).
+
 ---
 
 ## Quick Start: Building Screen Clock
