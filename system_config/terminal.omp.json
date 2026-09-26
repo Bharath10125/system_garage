@@ -1,0 +1,133 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "leading_diamond": "<#7eb8da>┏</>",
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "foreground": "#7eb8da",
+                    "template": "[<#ffffff></> {{ .UserName }} :: <#ffffff></> {{ .HostName }}]"
+                },
+                {
+                    "type": "sysinfo",
+                    "style": "diamond",
+                    "foreground": "#be9ddf",
+                    "template": "[<#ffffff></> RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB]"
+                },
+                {
+                    "type": "battery",
+                    "style": "plain",
+                    "foreground": "#f36943",
+                    "foreground_templates": [
+                        "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
+                        "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
+                        "{{if eq \"Full\" .State.String}}#4caf50{{end}}"
+                    ],
+                    "template": "[{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}]",
+                    "options": {
+                        "charged_icon": "<#ffffff></> ",
+                        "charging_icon": "󰖅 ",
+                        "discharging_icon": "<#ffff00></> "
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "#7eb8da",
+                    "template": "[<#ffffff></> {{ .CurrentDate | date .Format }}]",
+                    "options": {
+                        "time_format": "15:04:05"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "leading_diamond": "<#7eb8da>┣</>",
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "diamond",
+                    "foreground": "#7eb8da",
+                    "template": "[<#ffffff></> <#98bfad>{{ .Path }}]"
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "#ffa5d8",
+                    "template": "[<#ffffff>{{ .UpstreamIcon }} </>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <#ffffff></> {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <#ffffff></> {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} <#ffffff></> {{ .StashCount }}{{ end }}]",
+                    "options": {
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "executiontime",
+                    "style": "plain",
+                    "foreground": "#be9ddf",
+                    "template": "[<#ffffff></> {{ .FormattedMs }}s]",
+                    "options": {
+                        "style": "dallas",
+                        "threshold": 0
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "leading_diamond": "<#7eb8da>└─</>",
+            "segments": [
+                {
+                    "type": "root",
+                    "style": "diamond",
+                    "template": "<#ffff00>[#]</>"
+                },
+                {
+                    "type": "status",
+                    "style": "diamond",
+                    "foreground": "#ffa5d8",
+                    "template": "[<#ffffff></> Error, check your command]"
+                },
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "template": ">"
+                }
+            ]
+        }
+    ],
+    "final_space": true,
+    "secondary_prompt": {
+        "background": "transparent",
+        "template": " "
+    },
+    "valid_line": {
+        "background": "transparent",
+        "template": "> "
+    },
+    "error_line": {
+        "background": "transparent",
+        "template": "<#ff0000></> "
+    },
+    "version": 4
+}
