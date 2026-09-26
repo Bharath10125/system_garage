@@ -1,4 +1,4 @@
-# Screen Clock (FedoraClock)
+# Screen Clock
 
 A high-performance, minimalist full-screen flip digital clock written in **C++17** using **Qt 6** (`Qt6::Core`, `Qt6::Gui`, `Qt6::Widgets`). Runs seamlessly on both **Linux** and **Windows**.
 
