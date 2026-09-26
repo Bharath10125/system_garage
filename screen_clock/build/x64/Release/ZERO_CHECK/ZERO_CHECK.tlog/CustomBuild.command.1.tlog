@@ -1,0 +1,10 @@
+^C:\USERS\BHARATH\DOCUMENTS\SYSTEM_GARAGE\FEDORA_CLOCK\BUILD\CMAKEFILES\15AD223D8A2D2541C3CD091FE1CB66AD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bharath/Documents/system_garage/fedora_clock -BC:/Users/Bharath/Documents/system_garage/fedora_clock/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Bharath/Documents/system_garage/fedora_clock/build/FedoraClock.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

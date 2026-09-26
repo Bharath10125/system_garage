@@ -1,0 +1,28 @@
+^C:\USERS\BHARATH\DOCUMENTS\SYSTEM_GARAGE\FEDORA_CLOCK\BUILD\CMAKEFILES\6E2A9EEF048F2D6C0642C77135E067D6\TIMESTAMP_(CONFIG).RULE
+setlocal
+cd C:\Users\Bharath\Documents\system_garage\fedora_clock\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/fedora_clock_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Bharath/Documents/system_garage/fedora_clock/build/fedora_clock_autogen/timestamp_Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 18 2026" MSBuildAdditionalInputs C:/Users/Bharath/Documents/system_garage/fedora_clock C:/Users/Bharath/Documents/system_garage/fedora_clock C:/Users/Bharath/Documents/system_garage/fedora_clock/build C:/Users/Bharath/Documents/system_garage/fedora_clock/build C:/Users/Bharath/Documents/system_garage/fedora_clock/build/fedora_clock_autogen/deps_Release C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/d/5f6c452386c367d38a022ede1c98287193a19e3d1d94dda15ad6761ccf272462.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BHARATH\DOCUMENTS\SYSTEM_GARAGE\FEDORA_CLOCK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bharath/Documents/system_garage/fedora_clock -BC:/Users/Bharath/Documents/system_garage/fedora_clock/build --check-stamp-file C:/Users/Bharath/Documents/system_garage/fedora_clock/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
